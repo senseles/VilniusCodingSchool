@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Basic 86</title>
+<meta charset="iso-8859-1">
+<link rel="stylesheet" href="styles/layout.css" type="text/css">
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <!--<h1><a href="#">My Logo here</a></h1> -->
+      <a href="index.html"><img src="images/demo/logo.png" alt="My logo"></a>
+      
+      <!--<h2>Free HTML5 Website Template</h2> -->
+    </div>
+    <nav>
+      <ul>
+        <li><a href="about.html" target="_blank">About Us</a></li>
+        <li><a href="https://www.google.com" target="_blank">Our Services</a></li>
+        <li><a href="https://www.google.com" target="_blank">Contacts</a></li>
+        <li><a href="https://www.google.com" target="_blank">Career</a></li>
+        <!--<li class="last"><a href="#">Text Link</a></li> -->
+      </ul>
+    </nav>
+  </header>
+</div>
+<!-- content -->
+    <div id="container" class="clear">
+        <div class ="form">
+            <div class = "title">
+                <p>Sign up in seconds!</p> 
+            </div>
+            <div class="basic">    
+Tell us your name:
+<br>
+<input id='fname' type="text"   NAME="fname" size="30">
+<br>
+<br>
+Your Surname:
+<br>
+<input id='lname' type="text"   NAME="lname" size="30">
+<br>
+<br>
+Your email address:
+<br>
+<input id='email' type="email"   NAME="email" size="30">
+<br>
+<br>
+<button onclick="registrationForm()">Sign me up!</button>
+         </div>
+            <div class="selection">
+                Your gender:
+                <br>
+                <input type="radio" name="gender" value="male" checked> Male<br>
+                <input type="radio" name="gender" value="female" checked> Female<br>
+                <input type="radio" name="gender" value="default" checked> Default<br>
+            </div>   
+            <div class="confirmation">
+                <p id="demonew"></p>
+            </div>
+</div>
+      
+</div>
+<!-- Footer -->
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2012 - All Rights Reserved - <a href="#">Domain Name</a></p>
+    <p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  </footer>
+</div>
+<script>
+function registrationForm() {
+
+var fname = document.getElementById("fname").value;
+var lname = document.getElementById("lname").value;
+var email = document.getElementById("email").value;
+
+document.getElementById("demonew").innerHTML = "Congradulations, "+fname+", you have successfully signed up. Please check your email "+email+" for confirmation!" ;
+}
+</script>
+</body>
+</html>
+
+

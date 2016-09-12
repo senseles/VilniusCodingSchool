@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<script>
+var day;
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sekmadenis";
+        break;
+    case 1:
+        day = "Pirmadenis";
+        break;
+    case 2:
+        day = "Antradenis";
+        break;
+    case 3:
+        day = "Treciadenis";
+        break;
+    case 4:
+        day = "Ketvirtadenis";
+        break;
+    case 5:
+        day = "penktadenis";
+        break;
+    case  6:
+        day = "Sestadenis";
+        break;
+}
+document.getElementById("demo").innerHTML = "Siandien yra " + day;
+
+var today = new Date()
+var curHr = today.getHours();
+
+document.getElementById("demo2").innerHTML = "Dabartinis laikas yra: " + today.getHours()+" valanda "+ today.getMinutes()+" minuciu";
+
+
+
+if(curHr<12){
+      alert("Labas Rytas")
+}else if(curHr<18){
+      alert("Laba Diena")
+}else{
+      alert("Labas vakaras")
+}
+</script>
+
+</body>
+</html>

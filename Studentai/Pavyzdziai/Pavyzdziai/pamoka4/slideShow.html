@@ -1,0 +1,103 @@
+<html>
+<head>
+<script language="javascript">
+
+var onerotate_delay = 2000;
+onecurrent = 0;
+var onelinks = new array(3);
+onelinks[0] = "http://www.freewarejava.com";
+onelinks[1] = "http://www.javascriptkit.com";
+onelinks[2] = "http://www.dynamicdrive.com";
+
+function onenext() {
+	if (document.oneslideform.oneslide[onecurrent+1]) {
+		document.images.oneshow.src = document.oneslideform.oneslide[onecurrent+1].value;
+		document.oneslideform.oneslide.selectedindex = ++onecurrent;
+	   }
+	else onefirst();
+	}
+function oneprevious() {
+	if (onecurrent-1 >= 0) {
+		document.images.oneshow.src = document.oneslideform.oneslide[onecurrent-1].value;
+		document.oneslideform.oneslide.selectedindex = --onecurrent;
+	}
+	else onelast();
+}
+function onefirst() {
+	onecurrent = 0;
+	document.images.oneshow.src = document.oneslideform.oneslide[0].value;
+	document.oneslideform.oneslide.selectedindex = 0;
+}
+function onelast() {
+	onecurrent = document.oneslideform.oneslide.length-1;
+	document.images.oneshow.src = document.oneslideform.oneslide[onecurrent].value;
+	document.oneslideform.oneslide.selectedindex = onecurrent;
+}
+function oneap(text) {
+	document.oneslideform.oneslidebutton.value = (text == "stop") ? "start" : "stop";
+	onerotate();
+}
+function onechange() {
+	onecurrent = document.oneslideform.oneslide.selectedindex;
+	document.images.oneshow.src = document.oneslideform.oneslide[onecurrent].value;
+}
+function onerotate() {
+	if (document.oneslideform.oneslidebutton.value == "stop") {
+	onecurrent = (onecurrent == document.oneslideform.oneslide.length-1) ? 0 : onecurrent+1;
+	document.images.oneshow.src = document.oneslideform.oneslide[onecurrent].value;
+	document.oneslideform.oneslide.selectedindex = onecurrent;
+	window.settimeout("onerotate()", onerotate_delay);
+	}
+}
+
+function onetransport(){
+window.location=onelinks[onecurrent]
+}
+</script>
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+      <form name="oneslideform" >
+        <div align="center">
+          <table width="150" border="1" cellspacing="0" cellpadding="4" bordercolor="#330099">
+            <tr>
+              <td bgcolor="#330099">
+                <div align="center"><b><font color="#ffffff">image slideshow</font></b></div>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#ffffff">
+                <div align="center"><a href="javascript:onetransport()"><img src="images/slideimage1.gif" width="90" height="90" name="oneshow" border="0"></a></div>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#330099">
+                <div align="center">
+                  <select name="oneslide" onchange="onechange();">
+                    <option value="images/slideimage1.gif"  selected>image 1</option>
+                    <option value="images/slideimage2.gif">image 2</option>
+                    <option value="images/slideimage3.gif">image 3</option>
+                  </select>
+      </div>
+              </td>
+            </tr>
+            <tr>
+              <td bgcolor="#330099">
+                <div align="center">
+                  <input type=button onclick="oneprevious();" value="<<" title="previous">
+                  <input type=button name="oneslidebutton" onclick="oneap(this.value);" value="start" title="autoplay">
+                  <input type=button onclick="onenext();" value=">>" title="next">
+          </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </form>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

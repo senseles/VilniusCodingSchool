@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body { 
+     font-family: Arial, sans-serif; /* Ðrifto tipas */ 
+    }
+    .letter { 
+     color: red; /* Raudona teksto spalva */ 
+     font-size: 120%; /* Ðrifto dydis procentais */ 
+     font-family: serif; /* Ðrifto tipas */ 
+     position: relative; /* Santykinë padëtis */ 
+ 
+    }
+</style>
+</head>
+<body>
+<b>Bendra informacija</b>
+</br>
+Ateinanciai savaitei Jums reikes: </br>
+<p>
+https://www.sourcetreeapp.com/ <span class="letter"> - versijavimo tools </span> </br>
+<span class="letter"> Serveriai </span> http://www.wampserver.com/ <span class="letter"> Tiems kas turi Mac'os </span> https://www.mamp.info/en/ </br> 
+
+<p>
+
+<div>Prie pavyzdziu pereisim po <span id="time"></span> sekundziu!</div>
+<p>
+Noriu pereit dabar: <a href="http://webpavz.esy.es/Pavyzdziai/Pavyzdziai/">Pavyzdziai</a>
+</p>
+
+<script>
+
+window.onload = function () {
+    var seconds = 10,
+        display = document.querySelector('#time');
+    startTimer(seconds, display);
+};
+
+function startTimer(duration, display) {
+    var start = Date.now(),
+        diff,
+        minutes,
+        seconds;
+    function timer() {
+
+        diff = duration - (((Date.now() - start) / 1000) | 0);
+
+        minutes = (diff / 60) | 0;
+        seconds = (diff % 60) | 0;
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds; 
+
+        if (diff <= 0) {
+            // pavyzdziui 05:00 not 04:59
+            start = Date.now() + 1000;
+        }
+    };
+    // skaiciavimui
+    timer();
+    setInterval(timer, 1000);
+}
+
+ setTimeout(function(){
+       window.location='http://webpavz.esy.es/Pavyzdziai/Pavyzdziai/';
+    }, 10000);
+	
+</script>
+</body>
+</html>

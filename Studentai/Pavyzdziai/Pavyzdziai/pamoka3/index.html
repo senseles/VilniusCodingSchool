@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- Vakar Dienos ! ((: 
+<input id='NorimasSkaicius' type='number' value='1'>  -->
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<script>
+function myFunction(){
+
+	var today = new Date();
+	var curH = today.getHours();
+	
+	document.getElementById("demo").innerHTML = "Dabartinis laikas yra" 
+	+ today.getHours() 
+	+ " Valanda" 
+	+today.getMinutes()
+	+" minuciu";
+	
+	var text = "";
+	var kintamasis; 
+	
+	//alert(new Date().getDay());
+	
+	var i = 1;
+	var norimas_sk = document.getElementById("NorimasSkaicius").value;
+	
+	if(norimas_sk==1){
+		//alert('Pakeisk skaiciu');
+	}
+	while(i<norimas_sk){
+		text += "<br> Skaicius Yra: "+ i;
+		i++;
+	}
+	
+}
+</script>
+ 
+</body>
+</html>

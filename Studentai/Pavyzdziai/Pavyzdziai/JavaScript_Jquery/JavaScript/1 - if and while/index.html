@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Java Script IF ir While</p>
+
+<input id='NorimasSkaicius' type='number' value='1'> 
+
+</input> 
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var text = "";
+    var i = 1;
+	var norimas_sk = document.getElementById('NorimasSkaicius').value;
+	
+	if(norimas_sk == 1 ){
+		alert('Pakeisk skaiciu');
+	}
+	
+    while (i < norimas_sk) {
+        text += "<br>Skaicius yra " + i;
+        i++;
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

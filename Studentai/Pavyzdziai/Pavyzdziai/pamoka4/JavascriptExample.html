@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>In HTML, JavaScript statements are "commands" to the browser.</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<script>
+document.getElementById("demo").innerHTML = "Hello Dolly.";
+
+function myFunction(a, b) {
+    return a * b;
+}
+document.getElementById("demo2").innerHTML = myFunction(4, 3);
+</script>
+
+
+<p id="demo3"></p>
+
+<script>
+
+var answer1 = "It's alright";
+var answer2 = "He is called 'Johnny'";
+var answer3 = 'He is called "Johnny"'; 
+
+document.getElementById("demo3").innerHTML =
+answer1 + "<br>" + answer2 + "<br>" + answer3; 
+
+</script>
+
+
+<p>A loop with a break.</p>
+
+<p id="demo4"></p>
+
+<script>
+var text = "";
+var i;
+for (i = 0; i < 10; i++) {
+    if (i === 3) { break; }
+    text += "The number is " + i + "<br>";
+}
+document.getElementById("demo4").innerHTML = text;
+</script>
+
+<p>Display the value of Boolean(10 > 9):</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo5"></p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo5").innerHTML = Boolean(10 > 9);
+}
+</script>
+
+
+</body>
+</html>

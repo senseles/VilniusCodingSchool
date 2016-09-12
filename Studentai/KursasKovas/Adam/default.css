@@ -1,0 +1,724 @@
+	html, body
+	{
+		height: 100%;
+	}
+	
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+		background: #111111;
+		font-family: 'Didact Gothic', sans-serif;
+		font-size: 12pt;
+		font-weight: 200;
+		color: #FFF;
+	}
+	
+	
+	h1, h2, h3
+	{
+		margin: 0;
+		padding: 0;
+	}
+	
+	p, ol, ul
+	{
+		margin-top: 0;
+	}
+	
+	ol, ul
+	{
+		padding: 0;
+		list-style: none;
+	}
+	
+	p
+	{
+		line-height: 180%;
+	}
+	
+	strong
+	{
+	}
+	
+	a
+	{
+		color: #ee0000;
+	}
+	
+	a:hover
+	{
+		text-decoration: none;
+	}
+	
+	.container
+	{
+		overflow: hidden;
+		margin: 0em auto;
+		width: 1200px;
+	}
+	
+/*********************************************************************************/
+/* Image Style                                                                   */
+/*********************************************************************************/
+
+	.image
+	{
+		display: inline-block;
+	}
+	
+	.image img
+	{
+		display: block;
+		width: 100%;
+	}
+	
+	.image-full
+	{
+		display: block;
+		width: 100%;
+		margin: 0 0 2em 0;
+	}
+	
+	.image-left
+	{
+		float: left;
+		margin: 0 2em 2em 0;
+	}
+	
+	.image-centered
+	{
+		display: block;
+		margin: 0 0 2em 0;
+	}
+	
+	.image-centered img
+	{
+		margin: 0 auto;
+		width: auto;
+	}
+
+/*********************************************************************************/
+/* List Styles                                                                   */
+/*********************************************************************************/
+
+	ul.style1
+	{
+	}
+	
+	ul.actions
+	{
+	}
+	
+	ul.actions li
+	{
+		display: inline-block;
+		padding: 0em 0.50em;
+	}
+
+
+/*********************************************************************************/
+/* Social Icon Styles                                                            */
+/*********************************************************************************/
+
+	ul.contact
+	{
+		margin: 0;
+		padding: 2em 0em 0em 0em;
+		list-style: none;
+	}
+	
+	ul.contact li
+	{
+		display: inline-block;
+		padding: 0em 0.30em;
+		font-size: 1em;
+	}
+	
+	ul.contact li span
+	{
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	ul.contact li a
+	{
+		color: #FFF;
+	}
+	
+	ul.contact li a:before
+	{
+		display: inline-block;
+		background: #3f3f3f;
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+		border-radius: 20px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+	
+	ul.contact li a.icon-twitter:before { background: #2DAAE4; }
+	ul.contact li a.icon-facebook:before { background: #39599F; }
+	ul.contact li a.icon-dribbble:before { background: #C4376B;	}
+	ul.contact li a.icon-tumblr:before { background: #31516A; }
+	ul.contact li a.icon-rss:before { background: #F2600B; }
+
+/*********************************************************************************/
+/* Button Style                                                                  */
+/*********************************************************************************/
+
+	.button
+	{
+		display: inline-block;
+		padding: 1em 2em 1em 2em;
+		letter-spacing: 0.10em;
+		margin-top: 2em;
+		padding: 1.40em 3em;
+		border: 2px solid rgba(255,255,255,1);
+		border-radius: 6px;
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 1em;
+		color: #FFF;
+	}
+	
+	.button-alt
+	{
+		padding: 1em 2em;
+		border-color: rgba(0,0,0,.8);
+		color: rgba(0,0,0,.8);
+	}
+		
+/*********************************************************************************/
+/* 4-column                                                                      */
+/*********************************************************************************/
+
+	.box1,
+	.box2,
+	.box3,
+	.box4
+	{
+		width: 235px;
+	}
+	
+	.box1,
+	.box2,
+	.box3,
+	{
+		float: left;
+		margin-right: 20px;
+	}
+	
+	.box4
+	{
+		float: right;
+	}
+	
+/*********************************************************************************/
+/* 3-column                                                                      */
+/*********************************************************************************/
+
+	.boxA,
+	.boxB,
+	.boxC
+	{
+		width: 384px;
+	}
+
+	.boxA,
+	.boxB
+	{
+		float: left;
+		margin-right: 20px;
+	}
+	
+	.boxC
+	{
+		float: right;
+	}
+
+/*********************************************************************************/
+/* 2-column                                                                      */
+/*********************************************************************************/
+
+	.tbox1,
+	.tbox2
+	{
+		width: 575px;
+	}
+	
+	.tbox1
+	{
+		float: left;
+	}
+
+	.tbox2
+	{
+		float: right;
+	}
+
+	
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+	.title
+	{
+		margin-bottom: 3em;
+	}
+	
+	.title h2
+	{
+		font-size: 2.7em;
+	}
+	
+	.title .byline
+	{
+		font-size: 1.3em;
+		color: white;
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#wrapper
+	{
+		position: relative;
+		padding: 5em 0em 7em 0em;
+		background: #FFF;
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header-wrapper
+	{
+		position: relative;
+		padding: 5em 0em 7em 0em;
+		background: #111111 url(header-bg.jpg) no-repeat center;
+		background-size: cover;
+	}
+
+	#header
+	{
+		position: relative;
+		padding: 5em 0em;
+	}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+		position: absolute;
+		top: 3.6em;
+		left: 0;
+	}
+	
+	#logo h1
+	{
+		font-size: 2.6em;
+		color: #79C255;
+	}
+	
+	#logo a
+	{
+		text-decoration: none;
+		color: rgba(255,255,255,1);
+	}
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+	#menu
+	{
+		position: absolute;
+		top: 4.5em;
+		right: 0;
+	}
+	
+	#menu ul
+	{
+		display: inline-block;
+	}
+	
+	#menu li
+	{
+		display: block;
+		float: left;
+		text-align: center;
+	}
+	
+	#menu li a, #menu li span
+	{
+		padding: 1em 1.5em;
+		letter-spacing: 1px;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 0.8em;
+		color: black;
+	}
+	
+	#menu li:hover a, #menu li.active a, #menu li.active span
+	{
+	}
+	
+	#menu .active a
+	{
+		border: 2px solid rgba(255,255,255,1);
+		border-radius: 6px;
+		color: rgba(255,255,255,1);
+	}
+	
+	#menu .icon
+	{
+	}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		padding-top: 10em;
+		text-align: center;
+	}
+	
+	#banner .title h2
+	{
+		font-size: 4em;
+	}
+	
+	#banner .title .byline
+	{
+		font-size: 2em;
+	}
+	
+	#banner .button
+	{
+		margin-top: 2em;
+		padding: 1.40em 3em;
+		border: 2px solid rgba(255,255,255,1);
+		border-radius: 6px;
+		font-weight: 700;
+		font-size: 1em;
+		
+	}
+	
+	.banner
+	{
+		margin-bottom: 5em;
+	}
+
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+
+	#page
+	{
+	}
+
+/*********************************************************************************/
+/* Content                                                                       */
+/*********************************************************************************/
+
+	#content
+	{
+	}
+
+/*********************************************************************************/
+/* Sidebar                                                                       */
+/*********************************************************************************/
+
+	#sidebar
+	{
+	}
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+		color: teal;
+	}
+
+/*********************************************************************************/
+/* Copyright                                                                     */
+/*********************************************************************************/
+
+	#copyright
+	{
+		overflow: hidden;
+		padding: 5em 0em;
+		border-top: 1px solid rgba(0,0,0,0.08);
+	}
+	
+	#copyright p
+	{
+		text-align: center;
+		font-size: 1em;
+		color: rgba(255,255,255,0.3);
+	}
+	
+	#copyright a
+	{
+		text-decoration: none;
+		color: rgba(255,255,255,0.6);
+	}
+
+
+/*********************************************************************************/
+/* Welcome                                                                       */
+/*********************************************************************************/
+
+	#welcome
+	{
+		position: relative;
+		padding: 7em 0em 7em 0em;
+		background: red;
+		background-size: cover;
+		text-align: center;
+	}
+	
+	#welcome .container
+	{
+		width: 1000px;
+		padding: 0px 100px;
+		color: #FFFFFF;
+	}
+	
+	#welcome a
+	{
+		color: rgba(255,255,255,1);
+	}
+
+
+/*********************************************************************************/
+/* Extra                                                                         */
+/*********************************************************************************/
+
+	#three-column
+	{
+		text-align: center;
+		color: rgba(0,0,0,0.6);
+	}
+
+	#three-column .fa
+	{
+		display: block;
+		padding: 1em 0em;
+		color: rgba(0,0,0,1);
+		font-size: 2em;
+	}
+	
+	#three-column .title h2
+	{
+		font-weight: bold;
+		color: rgba(0,0,0,0.8);
+	}
+
+	#three-column .title .byline
+	{
+		text-align: center;
+		color: rgba(0,0,0,.5);
+	}
+
+/*login*/
+.pen-title {
+	color: teal;
+}
+/**************************/
+
+
+
+}
+
+
+/* Card */
+.card {
+ 
+  
+  
+  padding: 60px 0 40px 0;
+  box-sizing: border-box;
+  
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  /* Title */
+  /* Inputs */
+  /* Button */
+  /* Footer */
+  /* Alt Card */
+}
+.card:first-child {
+  background: #fafafa;
+  height: 10px;
+  border-radius: 5px 5px 0 0;
+  margin: 0 10px;
+  padding: 0;
+}
+.card .title {
+  position: relative;
+  z-index: 1;
+  border-left: 5px solid #ed2553;
+  margin: 0 0 35px;
+  padding: 10px 0 10px 50px;
+  color: #ed2553;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.card .input-container {
+  position: relative;
+  margin: 0 60px 50px;
+}
+.card .input-container input {
+  outline: none;
+  z-index: 1;
+  position: relative;
+  background: none;
+  width: 100%;
+  height: 60px;
+  border: 0;
+  color: #212121;
+  font-size: 24px;
+  font-weight: 400;
+}
+.card .input-container input:focus ~ label {
+  color: #9d9d9d;
+  -webkit-transform: translate(-12%, -50%) scale(0.75);
+          transform: translate(-12%, -50%) scale(0.75);
+}
+.card .input-container input:focus ~ .bar:before, .card .input-container input:focus ~ .bar:after {
+  width: 50%;
+}
+.card .input-container input:valid ~ label {
+  color: #9d9d9d;
+  -webkit-transform: translate(-12%, -50%) scale(0.75);
+          transform: translate(-12%, -50%) scale(0.75);
+}
+.card .input-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #757575;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 60px;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+.card .input-container .bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #757575;
+  width: 100%;
+  height: 1px;
+}
+.card .input-container .bar:before, .card .input-container .bar:after {
+  content: '';
+  position: absolute;
+  background: #ed2553;
+  width: 0;
+  height: 2px;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+.card .input-container .bar:before {
+  left: 50%;
+}
+.card .input-container .bar:after {
+  right: 50%;
+}
+.card .button-container {
+  margin: 0 60px;
+  text-align: center;
+}
+.card .button-container button {
+  outline: 0;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  background: 0;
+  width: 240px;
+  border: 2px solid #e3e3e3;
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  overflow: hidden;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.card .button-container button span {
+  position: relative;
+  z-index: 1;
+  color: #ddd;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+  /* Toggle */
+  /* Title */
+  /* Input */
+  /* Button */
+}
+.card.alt .toggle {
+  position: relative;
+  background: #ed2553;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  
+  font-size: 58px;
+  line-height: 140px;
+  text-align: center;
+  cursor: pointer;
+}
+.card.alt .toggle:before {
+  content: '\f040';
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.card.alt .title,
+.card.alt .input-container,
+.card.alt .button-container {
+  left: 100px;
+  opacity: 0;
+  visibility: hidden;
+}
+.card.alt .title {
+  position: relative;
+  border-color: #ffffff;
+  
+}
+.card.alt .title .close {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 60px;
+  display: inline;
+  
+  font-size: 58px;
+  font-weight: 400;
+}
+
+
+
+

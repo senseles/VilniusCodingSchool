@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>VSC</title>
+	<style> 
+	#myDIV {
+		width: 500px;
+		height: 500px;
+		background-color: lightblue;
+	}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+		$("#show").click(function(){
+			$("p").show(100);
+		})
+	})
+	
+	$(document).ready(function(){
+		$("#hide").click(function(){
+			$("p").hide(100);
+		})
+	})
+	
+	</script>
+  </head>
+  <body>
+  
+    <button id="show">Show</button>
+	<button id="hide">Hide</button>
+<p>tekstas 1111 </p>
+<p>tekstas 22222 </p>
+ </body>
+</html>

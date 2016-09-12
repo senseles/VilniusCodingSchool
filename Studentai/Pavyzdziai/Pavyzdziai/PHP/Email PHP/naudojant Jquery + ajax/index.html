@@ -1,0 +1,39 @@
+<html>
+ <head>
+  <title>VSC</title>
+  <script src="jquery.js"></script>
+ </head>
+ <body>
+ 
+<form id="contact-form" action="mail.php">
+
+    Vardas : <input id="FName" style="width:50px;" name="FName" placeholder="" value="Vardenis"> </br>
+    Pavarde : <input id="LName" name="LName" placeholder="" value="Vardenis"></br>
+    Email : <input id="Email" name="Email" placeholder="" value="vardenis@gmail.com"> </br>
+	Email cc : <input id="Emailcc" name="Emailcc" placeholder="" value="vardenis@gmail.com"> </br>
+    Tel.Nr : <input id="TelNr" name="TelNr" placeholder="+370.." ></br>
+    Zinute: <textarea id="message" name ="message" placeholder="privalomas *"> </textarea></br>
+	<button id="send-mail">send</button>
+
+ </form>
+	<script>		
+	  $("#send-mail").click(function () {
+
+   	
+            var dataString = $('#contact-form').serialize(); 
+            $.ajax({
+                type: "POST",
+				url: "mail.php",
+                data: dataString,
+                timeout: 6,
+			    success: function(){
+				alert('send');
+				}
+  
+            });
+
+ 
+    });
+	</script>
+ </body>
+</html>
