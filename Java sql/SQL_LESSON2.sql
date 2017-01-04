@@ -1,7 +1,7 @@
 CREATE DATABASE dbname;
 
 
-CREATE TABLE Persons
+CREATE TABLE Personsasasasasdasd
 (
 Person_Id int NOT NULL AUTO_INCREMENT,
 LastName varchar(255) NOT NULL,
